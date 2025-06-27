@@ -54,7 +54,7 @@ with st.sidebar:
             "gpt-4-0613",
             "gpt-4-32k",
             'deepseek-chat',
-            'deepseek-reasoner'
+            'deepseek-reasoner',
             'deepseek-text-v1',
         ]
     model_name = st.selectbox(label ="请选择模型",options = model_options)
