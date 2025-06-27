@@ -1,7 +1,6 @@
 from common import get_llm_response
 import streamlit as st
 from openai import OpenAI
-from gtts import gTTS
 import tempfile
 
 # 运行：streamlit run ...
