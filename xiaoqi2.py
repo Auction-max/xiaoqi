@@ -101,12 +101,4 @@ if user_input:
         result = st.chat_message("ai").write_stream(answer)
         st.session_state['messages'].append(('ai',result))
 
-        # 文本转语音播放按钮
-        if result:
-            if st.button("🔊 播放AI回复语音"):
-                # 使用gTTS生成语音并播放
-                tts = gTTS(text=result, lang='zh-cn')
-                with tempfile.NamedTemporaryFile(delete=True, suffix=".mp3") as tmpfile:
-                    tts.save(tmpfile.name)
-                    audio_bytes = tmpfile.read()
-                    st.audio(audio_bytes, format="audio/mp3")
+    
